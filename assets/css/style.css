@@ -68,13 +68,21 @@ nav ul{
 
 nav ul li{
     list-style: none;
-    margin: 0 15px;
-    padding: 24px 0;
     border-bottom: 2px solid transparent;
 }
 
 nav ul li:hover{
     border-bottom: 2px solid var(--roxo);
+}
+
+nav ul li a{
+    padding: 24px 15px;
+    color: black;
+    display: inline-block;
+}
+
+nav ul li:hover a{
+    color: var(--roxo);
 }
 
 /* inicio */
@@ -384,6 +392,7 @@ nav ul li:hover{
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .contato-text{
@@ -412,4 +421,88 @@ nav ul li:hover{
     background-color: var(--roxo);
     border-radius: 4px;
     padding: 15px 30px;
+}
+
+.contato-dados{
+    width: 40%;
+}
+
+.contato-dados div{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.contato-dados div:last-child{
+    margin-bottom: 0px;
+}
+
+
+.contato-dados div i{
+    width:26px;
+    color: var(--roxo);
+    font-size: 26px;
+    text-align: center;
+}
+
+.contato-dados div span{
+    color: var(--cinza-texto);
+    font-size: 18px;
+    margin-left: 14px;
+}
+
+/* Footer */
+footer{
+    background-color: var(--roxo);
+    padding: 50px 0;
+}
+footer .container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .text-box h3,
+footer .text-box h3 span{
+    font-family: var(--poppins);
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 23px;
+}
+
+footer .text-box h3 span{
+    color: var(--white);
+}
+
+footer .text-box p{
+    font-size: 16px;
+    color: var(--fundo-box);
+    margin-bottom: 12px;
+}
+
+.social{
+    position: relative;
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social a{
+    position: relative;
+    transition: 1s ease-in-out;
+}
+
+.social a:hover::before{
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    transition: 1s ease-in-out;
 }
