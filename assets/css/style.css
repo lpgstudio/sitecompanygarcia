@@ -161,7 +161,7 @@ nav.sticky{
 /* Sobre */
 
 #sobre{
-    padding: 100px 0;
+    padding: 100px 0 150px 0;
     border-width: 1px;
     border-style: solid;
     border-image: 
@@ -226,9 +226,10 @@ nav.sticky{
 }
 
 /* serviços */
-#servicos{
+#servico{
     background-color: var(--fundo-box);
-    padding: 160px 0;
+
+    padding: 160px 0 ;
 
     border-width: 1px;
     border-style: solid;
