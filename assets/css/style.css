@@ -586,7 +586,26 @@ footer .text-box p{
     transition: 1s ease-in-out;
 }
 
+/*WhatsApp Button==========================================*/
 
+.whats-bnt{
+    position: fixed;
+    bottom: 10px;
+    right:10px; 
+    animation: whats 2s infinite;
+}
+
+@keyframes whats {
+  0% {bottom: 10px;}
+  50% {bottom: 20px;}
+  100% {bottom: 10px;}
+}   
+
+.whats-bnt a img{
+    width: 60px;   
+}
+
+/*End - WhatsApp Button ===================================*/
 
 /* Responsivo */
 
@@ -751,6 +770,9 @@ footer .text-box p{
         width: 300px;
         height: 300px;
         padding: 20px 30px;
+    }
+    .servico-box .card h3{
+        text-align: center;
     }
 
     /* depoimento */
