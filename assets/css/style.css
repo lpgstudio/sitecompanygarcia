@@ -153,9 +153,9 @@ nav.sticky{
 .inicio-img img{
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 80px;
     transform: translateY(-50%);
-    width: 100%;
+    width: 90%;
 }
 
 /* Sobre */
