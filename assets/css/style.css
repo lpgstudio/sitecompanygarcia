@@ -23,6 +23,7 @@ body{
 
 a{
     text-decoration: none;
+    
 }
 
 .container{
@@ -85,6 +86,7 @@ nav ul li a{
     padding: 24px 15px;
     color: black;
     display: inline-block;
+    font-weight: 700;
 }
 
 nav ul li:hover a{
@@ -128,7 +130,7 @@ nav.sticky{
 
 .inicio-text h2{
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 40px;
 }
 
@@ -146,8 +148,6 @@ nav.sticky{
     width: 90%;
     max-width: 1019px;
     height: 625px;
-    min-height: 547px;
-    max-height: 625px;
 }
 
 .inicio-img img{
@@ -674,7 +674,8 @@ footer .text-box p{
     /* Header */
     #inicio {padding: 40px 0 80px 0;}
     #inicio .container {
-        justify-content: space-between;
+        display: flex;
+        justify-content:  flex-end;
         align-items: center;
         flex-direction: column-reverse;
     }
@@ -683,12 +684,15 @@ footer .text-box p{
         top: 0;
         left: 0;
         margin-bottom: 40px;
+        height: 350px;
     }
+
     .inicio-img img {
         width: 100%;
         left: 0;
+        top: 225px;
     }
-    .inicio-text {text-align: center;}
+    .inicio-text {text-align: center; margin-top:0;}
     .inicio-text a {padding: 15px 50px;}
 
     /* Sobre */
@@ -720,7 +724,10 @@ footer .text-box p{
 
     footer .container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+    }
+    footer .container .text-box{
+            text-align: center;
     }
 
     .social {
@@ -744,6 +751,11 @@ footer .text-box p{
     .voto{
         min-width: 107px;
     }
+
+    .inicio-img img {
+        width: 100%;
+        left: 0;
+    }
 }
 
 @media screen and (max-width: 498px){
@@ -762,7 +774,19 @@ footer .text-box p{
     /* contato */
     .contato-text {width: 100%;}
     .contato-dados {width: 100%;}
-}
+
+    .inicio-img {
+        height: 220px;
+    }
+
+    .inicio-img img {
+        top: 150px;
+    }
+
+    /* #inicio .container {
+        height: 0px;
+    }*/
+} 
 
 @media screen and (max-width: 385px){
     /* serviço */
